@@ -1,0 +1,59 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.about-content {
+    display: flex;
+    flex: 1;
+    gap: 4rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.about-info {
+    color: var(--black);
+
+    h2 {
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.6rem;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 150%;
+    }
+
+    button {
+        padding: 1rem 1.6rem;
+        transform: skew(-20deg);
+        border: 0;
+        background-color: var(--yellow);
+        color: var(--white);
+        margin-top: 1rem;
+        margin-right: auto;
+        transition: 0.3s;
+        font-weight: 500;
+    }
+
+    button:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-content {
+        gap: 2rem;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
